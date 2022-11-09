@@ -1,0 +1,554 @@
+@font-face {
+  font-family: "gt_walsheim_promedium";
+  src: url("../fonts/gtwalsheimpro-medium-webfont.eot");
+  src: url("../fonts/gtwalsheimpro-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gtwalsheimpro-medium-webfont.woff2") format("woff2"), url("../fonts/gtwalsheimpro-medium-webfont.woff") format("woff"), url("../fonts/gtwalsheimpro-medium-webfont.ttf") format("truetype"), url("../fonts/gtwalsheimpro-medium-webfont.svg#gt_walsheim_promedium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gt_walsheim_proregular";
+  src: url("../fonts/gtwalsheimpro-regular-webfont.eot");
+  src: url("../fonts/gtwalsheimpro-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gtwalsheimpro-regular-webfont.woff2") format("woff2"), url("../fonts/gtwalsheimpro-regular-webfont.woff") format("woff"), url("../fonts/gtwalsheimpro-regular-webfont.ttf") format("truetype"), url("../fonts/gtwalsheimpro-regular-webfont.svg#gt_walsheim_proregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GT Walsheim Pro";
+  src: local("GT Walsheim Pro Bold"), local("GT-Walsheim-Pro-Bold"), url("../fonts/GTWalsheimPro-Bold.woff2") format("woff2"), url("../fonts/GTWalsheimPro-Bold.woff") format("woff"), url("../fonts/GTWalsheimPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+.before, .mobile-nav__profile-btn.is-parent::before, .header-profile__dropdown-exit::before, .header-profile__dropdown-exit::after, .profile-dropdown__role-add__btn span::before, .profile-dropdown__role-add__btn span::after, .profile-dropdown__role-list li a::after, .profile-dropdown__role-list li a::before, .header-profile__dropdown::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.d-block, .mobile-action__list li a, .mobile-action__list li, .mobile-action__list, .header-profile__dropdown-exit, .profile-dropdown__role-add__btn, .profile-dropdown__role-add, .profile-dropdown__role-list li a, .profile-dropdown__role-list li, .profile-dropdown__role-list, .profile-dropdown__label, .profile-dropdown__role, .profile-dropdown__user-role, .profile-dropdown__user-name, .header-profile__dropdown-block {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.d-inline {
+  display: inline-block;
+}
+
+.header-profile__name.is-role {
+  font: 600 15px/17px "GT Walsheim Pro", "Arial", sans-serif;
+  letter-spacing: -0.02em;
+  opacity: 0.7;
+}
+
+.header-profile {
+  display: block;
+  position: relative;
+  margin-left: 10px;
+}
+@media (max-width: 1279px) {
+  .header-profile {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .header-profile {
+    display: none !important;
+  }
+}
+
+.header-profile__btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  font: 700 16px/20px "GT Walsheim Pro", "Arial", sans-serif;
+  color: #fff;
+  padding-right: 3px;
+}
+
+.header-profile__btn-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 1px;
+  padding-right: 16px;
+  white-space: nowrap;
+}
+
+@media (max-width: 1279px) {
+  .header--scroll-new .header-profile__btn-left {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1279px) and (min-width: 901px) {
+  .header--scroll-new .header-profile__dropdown::before {
+    right: 15px !important;
+  }
+}
+
+.header-profile__btn-right {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.header-profile__icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #B9DCF5;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.header-profile__dropdown {
+  position: absolute;
+  right: 0;
+  top: 86px;
+  display: none;
+  z-index: 30;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 23px rgba(51, 69, 107, 0.25);
+     -moz-box-shadow: 0px 0px 23px rgba(51, 69, 107, 0.25);
+          box-shadow: 0px 0px 23px rgba(51, 69, 107, 0.25);
+  -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+  width: 214px;
+}
+@media (min-width: 901px) {
+  .header-profile__dropdown::before {
+    right: 74px;
+    top: -17px;
+    border: 7.5px solid transparent;
+    border-bottom: 10px solid #fff;
+  }
+}
+@media (max-width: 900px) {
+  .header-profile__dropdown {
+    left: 20px;
+    width: -webkit-calc(100% - 40px);
+    width: -moz-calc(100% - 40px);
+    width: calc(100% - 40px);
+    -webkit-border-top-right-radius: 0;
+       -moz-border-radius-topright: 0;
+            border-top-right-radius: 0;
+  }
+  .header-profile__dropdown::before {
+    border: 7px solid transparent;
+    border-right: 7px solid #fff;
+    border-bottom: 7px solid #fff;
+    right: 0;
+    top: -13px;
+  }
+}
+
+.header-profile__dropdown-block:not(:last-child) {
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.profile-dropdown__user {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  width: 100%;
+  padding: 22px 22px 0;
+  margin-bottom: 12px;
+}
+
+.profile-dropdown__user-icon {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+span.profile-dropdown__user-icon--block {
+  background: #B9DCF5;
+  width: 31px;
+  height: 31px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.profile-dropdown__user-text {
+  padding-left: 9px;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 1px;
+}
+
+.profile-dropdown__user-name {
+  font: 14px/20px "GT Walsheim Pro", "Arial", sans-serif;
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.profile-dropdown__user-role {
+  font: 600 14px/18px "GT Walsheim Pro", "Arial", sans-serif;
+  color: #9C9C9C;
+}
+
+.profile-dropdown__personal {
+  float: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 10px 15px;
+  font: 400 14px/20px "GT Walsheim Pro", "Arial", sans-serif;
+  color: #333333;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-dropdown__personal-icon {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  width: 48px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile-dropdown__role {
+  padding-top: 16px;
+}
+
+.profile-dropdown__label {
+  padding: 0 22px;
+  margin-bottom: 12px;
+  font: 12px/16px "Open Sans", "Arial", sans-serif;
+  color: #797979;
+}
+
+.profile-dropdown__role-list {
+  padding: 0 22px;
+}
+.profile-dropdown__role-list li a {
+  border: 1px solid #DFDFDF;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  position: relative;
+  padding: 12px 10px 12px 39px;
+  font: 400 14px/20px "GT Walsheim Pro", "Arial", sans-serif;
+  color: #333333;
+}
+.profile-dropdown__role-list li a::before {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #CCCCCC;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  left: 11px;
+  top: 50%;
+  margin-top: -8px;
+}
+.profile-dropdown__role-list li a::after {
+  left: 16px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  margin-top: -3px;
+  background: #2976BC;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  opacity: 0;
+}
+.profile-dropdown__role-list li a.is-active {
+  border-color: #B9DCF5;
+  -webkit-box-shadow: 0 0 0 1px #B9DCF5 !important;
+     -moz-box-shadow: 0 0 0 1px #B9DCF5 !important;
+          box-shadow: 0 0 0 1px #B9DCF5 !important;
+}
+.profile-dropdown__role-list li a.is-active::before {
+  border-width: 2px;
+  border-color: #2976BC;
+}
+.profile-dropdown__role-list li a.is-active::after {
+  opacity: 1;
+}
+.profile-dropdown__role-list li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.profile-dropdown__role-add__btn {
+  padding: 14px 10px 16px 23px;
+  font: 12px/16px "Open Sans", "Arial", sans-serif;
+  color: #2976BC;
+}
+.profile-dropdown__role-add__btn span {
+  position: relative;
+  display: inline-block;
+  padding-left: 23px;
+}
+.profile-dropdown__role-add__btn span::before, .profile-dropdown__role-add__btn span::after {
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 50%;
+  margin-top: -8px;
+}
+.profile-dropdown__role-add__btn span::before {
+  background: url("images/svg/icon-plus-small-blue.svg") no-repeat;
+}
+.profile-dropdown__role-add__btn span::after {
+  background: url("images/svg/icon-plus-small-grey.svg") no-repeat;
+  opacity: 0;
+}
+
+.header-profile__dropdown-exit {
+  position: relative;
+  padding: 16px 10px 15px 62px;
+  font: 12px/16px "Open Sans", "Arial", sans-serif;
+  color: #797979;
+}
+.header-profile__dropdown-exit::before, .header-profile__dropdown-exit::after {
+  width: 24px;
+  height: 24px;
+  left: 30px;
+  top: 50%;
+  margin-top: -12px;
+}
+.header-profile__dropdown-exit::before {
+  background: url("images/svg/icon-exit-grey.svg") no-repeat;
+}
+.header-profile__dropdown-exit::after {
+  background: url("images/svg/icon-exit-blue.svg") no-repeat;
+  opacity: 0;
+}
+
+.mobile-nav__profile {
+  float: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #416483;
+  position: relative;
+}
+
+.mobile-nav__profile-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 1px;
+  font: 16px/20px "GT Walsheim Pro", "Arial", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  padding: 18px 20px;
+}
+.mobile-nav__profile-btn.is-parent {
+  position: relative;
+}
+.mobile-nav__profile-btn.is-parent::before {
+  right: 22px;
+  top: 50%;
+  margin-top: -4px;
+  width: 12px;
+  height: 7px;
+  background: url("images/svg/icon-arrow-down-white.svg") no-repeat center;
+  -webkit-transition: background 0.25s;
+  -o-transition: background 0.25s;
+  -moz-transition: background 0.25s;
+  transition: background 0.25s;
+}
+.mobile-nav__profile-btn.is-parent.is-open::before {
+  -webkit-transform: rotate(180deg);
+     -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.mobile-nav__name.is-role {
+  font: 600 15px/17px "GT Walsheim Pro", "Arial", sans-serif;
+  letter-spacing: -0.02em;
+  opacity: 0.7;
+}
+
+.mobile-action__list {
+  margin-top: 12px;
+}
+.mobile-action__list li a {
+  padding: 6px 20px;
+  font: 12px/16px "Open Sans", "Arial", sans-serif;
+  color: #fff;
+}
+
+.mobile-nav__profile-left {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.mobile-nav__profile-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #B9DCF5;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+
+.mobile-nav__profile-right {
+  padding-left: 17px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+     -moz-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 1px;
+}
+
+html:not(.bx-touch) .header-profile__dropdown-exit:hover {
+  color: #2976BC;
+}
+html:not(.bx-touch) .header-profile__dropdown-exit:hover::before {
+  opacity: 0;
+}
+html:not(.bx-touch) .header-profile__dropdown-exit:hover::after {
+  opacity: 1;
+}
+html:not(.bx-touch) .profile-dropdown__role-add__btn:hover {
+  color: #333333;
+}
+html:not(.bx-touch) .profile-dropdown__role-add__btn:hover span::before {
+  opacity: 0;
+}
+html:not(.bx-touch) .profile-dropdown__role-add__btn:hover span::after {
+  opacity: 1;
+}
+html:not(.bx-touch) .profile-dropdown__role-list li a:hover {
+  border-color: #B9DCF5;
+  -webkit-box-shadow: 0 0 0 1px #B9DCF5 !important;
+     -moz-box-shadow: 0 0 0 1px #B9DCF5 !important;
+          box-shadow: 0 0 0 1px #B9DCF5 !important;
+}
+html:not(.bx-touch) .profile-dropdown__personal:hover {
+  color: #2976BC;
+}
+html:not(.bx-touch) .header-phone a:hover {
+  color: #B9DCF5;
+}
+html:not(.bx-touch) .header-search__btn:hover .header-search__btn-icon::before {
+  opacity: 0;
+}
+html:not(.bx-touch) .header-search__btn:hover .header-search__btn-icon::after {
+  opacity: 1;
+}
